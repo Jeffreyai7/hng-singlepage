@@ -1,0 +1,205 @@
+:root{
+    --primaryblue: #63d2de;
+    --primarydarkgrey: #2b3c51;
+    --primarygreen: #16a284;
+    --primarygrey: #7c8b8c;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+nav, section, .goals__wrapper{
+    padding: 1em;
+}
+
+.intro{
+    background-color: var(--primarydarkgrey);
+    color: rgb(157, 157, 202)
+}
+
+.about-us{
+    background-color: var(--primaryblue);
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.about-us h2{
+    margin-bottom: 1em;
+}
+
+.about-us__intro{
+display: flex;
+align-items: center;
+gap: 1em;
+}
+
+.about-us__intro > *{
+    width: 50%;
+}
+
+.about-us__intro img{
+border-radius: 50%;
+border: 2px solid white;
+}
+
+.goals{
+    background-color: var(--primarygrey);
+    padding: 1em 0;
+}
+.goals h2{
+    margin-bottom: 1em;
+}
+
+.goals ol{
+list-style-type:circle
+}
+
+.contact{
+    background-color: var(--primarygreen);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.contacts__wrapper > *{
+margin-bottom: 1em;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 50%
+}
+
+.links img{
+width: 25px;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    width: 50%;
+}
+.hide{
+    display: none;
+}
+
+@media screen and (min-width: 550px) {  
+    .intro div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .intro ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        text-indent: 0;
+        padding-left: 0;
+        width: 50%;
+    }
+
+    .about-us__intro{
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .about-us__img{
+        width: 25%;
+        min-width: 222px;
+    }
+    .info p{
+      margin-bottom: 1em; 
+      display: flex;
+      justify-content: space-around 
+    }
+    .info p span{
+        width: 50%;
+    }
+    .about-us__text{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+    .goals__wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* .contact{
+    } */
+
+    .contacts__wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .links__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin:0 auto;
+    }
+
+    .links__wrapper > *{
+     width: 100/3%;
+     justify-content: space-between;
+    }
+}
+
+
