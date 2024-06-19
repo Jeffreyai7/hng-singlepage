@@ -60,7 +60,11 @@ nav, section, .goals__wrapper{
 
 .intro{
     background-color: var(--primarydarkgrey);
-    color: rgb(157, 157, 202)
+    color: var(--primaryblue);
+}
+
+.info p{
+    margin-bottom: 0.5em;
 }
 
 .about-us{
@@ -72,6 +76,7 @@ nav, section, .goals__wrapper{
 
 .about-us h2{
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .about-us__intro{
@@ -92,7 +97,9 @@ border: 2px solid white;
 .goals{
     background-color: var(--primarygrey);
     padding: 1em 0;
+    color: white;
 }
+
 .goals h2{
     margin-bottom: 1em;
 }
@@ -120,7 +127,8 @@ margin-bottom: 1em;
     display: flex;
     align-items: center;
     gap: 1em;
-    width: 50%
+    width: 50%;
+    margin-bottom: 0.5em;
 }
 
 .links img{
@@ -133,6 +141,15 @@ width: 25px;
     justify-content:center ;
     width: 50%;
 }
+
+.links a{
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: aliceblue;
+}
+
 .hide{
     display: none;
 }
@@ -154,6 +171,14 @@ width: 25px;
         width: 50%;
     }
 
+    .intro ul a{
+        text-decoration: none;
+    }
+
+    .intro ul a:hover{
+        color:#16a284
+    }
+
     .about-us__intro{
         width: 70%;
         margin: 0 auto;
@@ -167,7 +192,8 @@ width: 25px;
     .info p{
       margin-bottom: 1em; 
       display: flex;
-      justify-content: space-around 
+      justify-content: space-around;
+      white-space: nowrap;
     }
     .info p span{
         width: 50%;
