@@ -69,11 +69,28 @@
             </section>
             <section class="contact" id="contacts">
                 <div class="contacts__wrapper">
-                    <h2>Follow Me</h2>
-                    <div class="links__wrapper">
-                        <div class="links"><div><img src="images/svg/facebook.svg" alt="facebook"><div class="link"><span>Facebook</span><a data-testid="facebook-handle" href="https://web.facebook.com/irukeh.jeffrey/">J.Irukeh</a></div></div></div>
-                        <div class="links"><div><img src="images/svg/linkedIn.svg" alt="linkedIn"><div class="link"><span>LinkedIn</span><a data-testid="linkedIn-handle" href="https://www.linkedin.com/in/jeffrey-irukeh-ab4326238">J.Irukeh</a></div></div></div>
-                        <div class="links"><div><img src="images/svg/slack.svg" alt="Slack"><div class="link"><span>Slack</span><a data-testid="Slack-handle" href="https://hngpremium.slack.com/team/U077SSG1HJA">J.Irukeh</a></div></div></div>
+                    <form action="">
+                        <div class="forminputs">
+                            <label for="name">Name</label>
+                            <input title="name" data-testid="name" type="text">
+                        </div>
+                        <div class="forminputs">
+                            <label for="email">Email</label>
+                            <input type="email" title="name" data-testid="email">
+                        </div>
+                        <div class="forminputs">
+                            <label for="Message">Message</label>
+                            <textarea title="Message" name="" data-testid="message" rows="7"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                    <div class="socials">
+                        <h2>Follow Me</h2>
+                        <div class="links__wrapper">
+                            <div class="links"><div><a data-testid="facebook-handle" href="https://web.facebook.com/irukeh.jeffrey/"><img src="images/svg/facebook.svg" alt="facebook"></a></div></div>
+                            <div class="links"><div><a data-testid="linkedIn-handle" href="https://www.linkedin.com/in/jeffrey-irukeh-ab4326238"><img src="images/svg/linkedIn.svg" alt="linkedIn"></a></div></div>
+                            <div class="links"><div><a data-testid="Slack-handle" href="https://hngpremium.slack.com/team/U077SSG1HJA"><img src="images/svg/slack.svg" alt="Slack"></a></div></div>
+                        </div>
                     </div>
                 </div>
             </section>
