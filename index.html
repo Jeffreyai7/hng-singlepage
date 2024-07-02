@@ -11,7 +11,7 @@
         <div class="wrapper">
             <nav class="intro">
             <div>
-                <h1>IRUKEH JEFFREY</h1>
+                <h1>JEFFREY IRUKEH</h1>
                 <ul class="hide">
                     <li><a data-testid="about-us" href="#about-us">About me</a></li>
                     <li><a data-testid="goals" href="#goals">Goals</a></li>
@@ -22,13 +22,14 @@
             <section data-testid="about-us" class="about-us" id="about-us">
                 <div class="about-us__intro">
                     <div class="about-us__img">
-                        <img data-testid="profile-image" src="images/DSC_0642.JPG" alt="profilepic" >
+                        <img data-testid="slackProfilePicture" src="images/DSC_0642 (1).jpg" alt="profilepic" >
                     </div>
                     <div class="info">
-                        <p data-testid="name"><span>Name:</span><span>Irukeh Jeffrey</span></p>
-                        <p data-testid="address"><span>Address:</span> <span>Gbogije Lagos, Nigeria</span></p>
-                        <p data-testid="email"><span>Email:</span><span>jirukeh@gmail.com</span></p>
-                        <p data-testid="phone"><span>Phone:</span><span>07031184549</span></p>
+                        <p data-testid="SlackDisplayName"><span>Name:</span><span>Jeffrey Irukeh</span></p>
+                        <p data-testid="address"><span>Address:</span> <span>Lagos, Nigeria</span></p>
+                        <p data-testid="SlackEmail"><span>Email:</span><span>jirukeh@gmail.com</span></p>
+                        <p data-testid="currentTimeUTC" ><span>Time:</span><span id="time" ></span></p>
+                        <p data-testid="currentDay"><span>Day:</span><span id="day"  ></span></p>
                     </div>
                 </div>
                 <div class="about-us__text">
@@ -69,32 +70,22 @@
             </section>
             <section class="contact" id="contacts">
                 <div class="contacts__wrapper">
-                    <form action="">
-                        <div class="forminputs">
-                            <label for="name">Name</label>
-                            <input title="name" data-testid="name" type="text">
-                        </div>
-                        <div class="forminputs">
-                            <label for="email">Email</label>
-                            <input type="email" title="name" data-testid="email">
-                        </div>
-                        <div class="forminputs">
-                            <label for="Message">Message</label>
-                            <textarea title="Message" name="" data-testid="message" rows="7"></textarea>
-                        </div>
-                        <button type="submit">Send</button>
-                    </form>
                     <div class="socials">
-                        <h2>Follow Me</h2>
-                        <div class="links__wrapper">
-                            <div class="links"><div><a data-testid="facebook-handle" href="https://web.facebook.com/irukeh.jeffrey/"><img src="images/svg/facebook.svg" alt="facebook"></a></div></div>
-                            <div class="links"><div><a data-testid="linkedIn-handle" href="https://www.linkedin.com/in/jeffrey-irukeh-ab4326238"><img src="images/svg/linkedIn.svg" alt="linkedIn"></a></div></div>
-                            <div class="links"><div><a data-testid="Slack-handle" href="https://hngpremium.slack.com/team/U077SSG1HJA"><img src="images/svg/slack.svg" alt="Slack"></a></div></div>
+                            <div class="links__wrapper">
+                                <div><a data-testid="facebook-handle" href="https://web.facebook.com/irukeh.jeffrey/"><img src="images/svg/facebook.svg" alt="facebook"></a></div>
+                                <div><a data-testid="linkedIn-handle" href="https://www.linkedin.com/in/jeffrey-irukeh-ab4326238"><img src="images/svg/linkedin-round.svg" alt="linkedIn"></a></div>
+                                <div><a data-testid="Slack-handle" href="https://hngpremium.slack.com/team/U077SSG1HJA"><img src="images/svg/brand-slack.svg" alt="Slack"></a></div>
+                            </div>
+                        <div class="external-links">
+                            <div><a  data-testid="keywordLink" href="https://keyword.dog">KEYWORD</a></div>
+                            <div><a  data-testid="hngLink" href="https://hng.tech/learn">HNG</a></div>
+                            <div><a data-testid="scrapeanywebLink" href="https://scrapeanyweb.site">SCRAPEANYWEB</a></div>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

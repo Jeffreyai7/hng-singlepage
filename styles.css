@@ -1,6 +1,6 @@
 :root{
-    --primaryblue: #63d2de;
-    --primarydarkgrey: #2b3c51;
+    --primaryblue: #10707a;
+    --primarydarkgrey: #9eabbc;
     --primarygreen: #16a284;
     --primarygrey: #7c8b8c;
 }
@@ -42,14 +42,6 @@ a:not([class]) {
   color: currentColor;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
@@ -82,8 +74,9 @@ nav, section, .goals__wrapper{
 
 .about-us__intro{
 display: flex;
-align-items: center;
+flex-direction: column;
 gap: 1em;
+justify-content: center;
 }
 
 .about-us__intro > *{
@@ -91,8 +84,11 @@ gap: 1em;
 }
 
 .about-us__intro img{
-border-radius: 50%;
-border: 2px solid white;
+/* border-radius: 50%; */
+/* border: 2px solid white; */
+object-fit: cover;
+object-position: bottom;
+
 }
 
 .goals{
@@ -109,38 +105,48 @@ border: 2px solid white;
 list-style-type:circle
 }
 
+.goals li{
+    margin-bottom: 1em;
+}
+
 .contact{
     background-color: var(--primarygreen);
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
-.contacts__wrapper > *{
-margin-bottom: 1em;
-}
-
-.forminputs{
-display: flex;
-flex-direction: column;
-margin-bottom: 1em;
-}
-
-.links{
+.socials{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-}
+    }
 
 .links__wrapper{
-   display: flex;
-    justify-content: space-between;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    display: flex;
+    gap: 3em;
 }
 
+  
 
-.links img{
-width: 25px;
+.external-links{
+display: flex;
+justify-content: space-between;
+gap: 1em;
 }
 
+.external-links a {
+text-decoration: none;
+display: inline-block;
+padding: .5em;
+background-color: var(--primaryblue) ;
+}
+
+.external-links a:hover{
+    background-color : rgb(214, 203, 203);
+}
 
 .hide{
     display: none;
@@ -165,6 +171,7 @@ width: 25px;
 
     .intro ul a{
         text-decoration: none;
+        font-size: 1.5rem;
     }
 
     .intro ul a:hover{
@@ -172,20 +179,19 @@ width: 25px;
     }
 
     .about-us__intro{
+        flex-direction: row;
+        align-items: center;
         width: 70%;
         margin: 0 auto;
         justify-content: space-between;
     }
-
-    .about-us__img{
-        width: 25%;
-        min-width: 222px;
-    }
+ 
     .info p{
       margin-bottom: 1em; 
       display: flex;
       justify-content: space-around;
       white-space: nowrap;
+      font-size: 1.2rem;
     }
     .info p span{
         width: 50%;
@@ -200,30 +206,11 @@ width: 25px;
         margin: 0 auto;
     }
 
-    /* .contact{
-    } */
-
     .contacts__wrapper{
         width: 70%;
         margin: 0 auto;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        gap: 1em;
     }
-
-    .contacts__wrapper > *{
-        width: 50%;
-    }
-
     
-    .socials{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }
-
-
 }
 
 
